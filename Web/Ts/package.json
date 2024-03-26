@@ -1,0 +1,13 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BridgePattern.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "build": "tsc",
+    "start": "node out/BridgePattern.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
