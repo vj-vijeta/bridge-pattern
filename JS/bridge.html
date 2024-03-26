@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bridge.css">
+    <title>Bridge Pattern Example</title>
+</head>
+<body>
+    <div class="theme-switch-container">
+        <label class="switch">
+            <input type="checkbox" id="themeSwitch" onchange="switchTheme()">
+            <span class="slider"></span>
+        </label>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;Toggle Theme</span>
+    </div>
+    <br/>
+    <div class="content-switch-container">
+        <input type="radio" id="simpleContent" name="contentSwitch" onchange="switchContent('simple')">
+        <label for="simpleContent">Simple Content</label>
+        
+        <input type="radio" id="complexContent" name="contentSwitch" onchange="switchContent('complex')">
+        <label for="complexContent">Complex Content</label>
+    </div>
+    <br/>
+
+    <div id="contentContainer" class="simple-theme">
+    </div>
+
+    <script src="bridge.js"></script>
+</body>
+</html>
